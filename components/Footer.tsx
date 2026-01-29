@@ -22,6 +22,7 @@ export default function Footer() {
                     <div className="flex gap-4 text-gray-400 text-sm">
                         <a href="#" className="hover:text-brand-green transition-colors">TikTok</a>
                         <a href="https://web.facebook.com/ebenezer.ama.2025" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors">Facebook</a>
+                        <a href="https://x.com/AmaEbenezer" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors">X (Twitter)</a>
                         <a href="https://www.instagram.com/pst_ebenezerama/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors">Instagram</a>
                         <a href="https://www.youtube.com/@EBENEZERAMA-flourish" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors">YouTube</a>
                     </div>
