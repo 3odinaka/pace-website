@@ -17,7 +17,7 @@ export default function Footer() {
                         PACE
                     </h3>
                     <p className="text-xl font-bold tracking-widest break-all">
-                        INFO@PASTOREBENEZERAMA.COM
+                        NEMERUCHE@GMAIL.COM
                     </p>
                     <div className="flex gap-4 text-gray-400 text-sm">
                         <a href="#" className="hover:text-brand-green transition-colors">TikTok</a>
