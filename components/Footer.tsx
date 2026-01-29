@@ -32,7 +32,7 @@ export default function Footer() {
                     <h4 className="font-bold tracking-widest uppercase mb-6 text-sm text-gray-500">HOME</h4>
                     <ul className="space-y-3 text-gray-300 text-xs font-bold tracking-wider">
                         <li><span className="cursor-default hover:text-brand-green transition-colors uppercase"><a href="https://www.instagram.com/flourishgc_global/">THE FLOURISH GENERATION CHURCH</a></span></li>
-                        <li><span className="cursor-default hover:text-brand-green transition-colors uppercase">SCHOOL OF MASTERY</span></li>
+                        <li><span className="cursor-default hover:text-brand-green transition-colors uppercase"><a href="#">SCHOOL OF MASTERY</a></span></li>
                     </ul>
                 </div>
 
