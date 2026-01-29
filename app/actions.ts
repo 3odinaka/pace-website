@@ -4,9 +4,9 @@ import { z } from "zod";
 import { supabase } from "@/utils/supabase";
 
 const schema = z.object({
-    name: z.string().min(1, "Name is required"),
-    email: z.string().email("Invalid email address"),
-    phone: z.string().optional(),
+    name: z.string().trim().min(2, "Name must be at least 2 characters long"),
+    email: z.string().trim().email("Please enter a valid email address"),
+    phone: z.string().trim().optional(),
 });
 
 export type State = {
