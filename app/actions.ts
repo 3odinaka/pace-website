@@ -36,22 +36,18 @@ export async function subscribeUser(prevState: State, formData: FormData): Promi
 
     const { name, email, phone } = validatedFields.data;
 
-    try {
-        const { error } = await supabase
-            .from("subscribers")
-            .insert([{ name, email, phone }]);
+    const { error } = await supabase
+        .from("subscribers")
+        .upsert([{ name, email, phone }], { onConflict: "email" });
 
-        if (error) {
-            if (error.code === "23505") { // Unique violation for email
-                return { message: "This email is already part of the community!", success: false };
-            }
-            console.error(error);
-            return { message: "Something went wrong. Please try again.", success: false };
-        }
-
-        return { message: "You're in! Welcome to the Waiting List.", success: true };
-    } catch (error) {
+    if (error) {
         console.error(error);
-        return { message: "Failed to connect to the server.", success: false };
+        return { message: "Something went wrong. Please try again.", success: false };
     }
+
+    return { message: "You're in! Welcome to the Waiting List.", success: true };
+} catch (error) {
+    console.error(error);
+    return { message: "Failed to connect to the server.", success: false };
+}
 }
