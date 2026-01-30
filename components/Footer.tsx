@@ -14,7 +14,7 @@ export default function Footer() {
 
                 {/* Column 1: Info (Socials) */}
                 <div className="space-y-6">
-                    <div className="relative w-40 h-16 mb-2">
+                    <div className="relative w-64 h-24 mb-4">
                         <Image
                             src="/images/logo.png"
                             alt="Ebenezer Ama Logo"

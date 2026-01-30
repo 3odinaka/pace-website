@@ -31,7 +31,7 @@ export default function Navbar() {
             >
                 {/* Logos */}
                 <div className="relative z-50">
-                    <Link href="/" className="block relative w-32 h-12">
+                    <Link href="/" className="block relative w-48 h-16">
                         <Image
                             src="/images/logo.png"
                             alt="Ebenezer Ama Logo"
