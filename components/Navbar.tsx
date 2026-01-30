@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
@@ -30,8 +31,14 @@ export default function Navbar() {
             >
                 {/* Logos */}
                 <div className="relative z-50">
-                    <Link href="/" className="font-serif text-3xl font-bold italic tracking-tighter text-white">
-                        PACE
+                    <Link href="/" className="block relative w-32 h-12">
+                        <Image
+                            src="/images/logo.png"
+                            alt="Ebenezer Ama Logo"
+                            fill
+                            className="object-contain object-left"
+                            priority
+                        />
                     </Link>
                 </div>
 

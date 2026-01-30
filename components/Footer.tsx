@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
     const scrollToForm = () => {
@@ -13,9 +14,14 @@ export default function Footer() {
 
                 {/* Column 1: Info (Socials) */}
                 <div className="space-y-6">
-                    <h3 className="font-serif text-3xl font-bold italic tracking-tighter text-white">
-                        PACE
-                    </h3>
+                    <div className="relative w-40 h-16 mb-2">
+                        <Image
+                            src="/images/logo.png"
+                            alt="Ebenezer Ama Logo"
+                            fill
+                            className="object-contain object-left"
+                        />
+                    </div>
                     <p className="text-xl font-bold tracking-widest break-all">
                         NEMERUCHE@GMAIL.COM
                     </p>
