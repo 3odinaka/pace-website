@@ -17,19 +17,17 @@ export default function Hero() {
             </div>
 
             {/* Image - Right Side */}
-            <div className="w-full md:w-1/2 h-[60vh] md:h-screen relative">
+            <div className="w-full md:w-1/2 h-[60vh] md:h-screen relative overflow-hidden">
                 {/* Grayscale Portrait */}
                 <div className="relative w-full h-full grayscale">
                     <Image
                         src="/images/hero_portrait.jpg"
                         alt="Ebenezer Ama"
                         fill
-                        className="object-cover object-top md:object-cover md:object-center"
+                        className="object-cover object-[50%_5%] md:object-top"
                         priority
                         sizes="(max-width: 768px) 100vw, 50vw"
                     />
-                    {/* Gradient Overlay for blending */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent md:bg-gradient-to-l md:from-transparent md:via-transparent md:to-black/80"></div>
                 </div>
             </div>
         </section>

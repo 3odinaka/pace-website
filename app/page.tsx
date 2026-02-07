@@ -2,12 +2,14 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import NewsletterSection from "@/components/NewsletterSection";
 import Footer from "@/components/Footer";
+import MediaCarousel from "@/components/MediaCarousel";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black">
       <Navbar />
       <Hero />
+      <MediaCarousel />
       <NewsletterSection />
       <div className="bg-black py-20 flex items-center justify-center">
         <h2 className="text-3xl md:text-5xl font-serif text-white text-center leading-tight mx-6">

@@ -41,11 +41,32 @@ body {
   .delay-300 {
     animation-delay: 0.3s;
   }
+
+  .animate-marquee {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 40s linear infinite;
+  }
+
+  /* Pause animation on hover */
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
 }
 
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.333%);
   }
 }
