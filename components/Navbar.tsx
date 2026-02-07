@@ -50,6 +50,9 @@ export default function Navbar() {
                     <Link href="/#newsletter" className="hover:text-brand-green transition-colors">
                         ABOUT
                     </Link>
+                    <Link href="/events" className="hover:text-brand-green transition-colors">
+                        EVENTS
+                    </Link>
                     <a
                         href="https://t.me/FlourishNation"
                         target="_blank"
@@ -61,9 +64,7 @@ export default function Navbar() {
                     <Link href="/media" className="hover:text-brand-green transition-colors">
                         MEDIA
                     </Link>
-                    <Link href="/#footer" className="hover:text-brand-green transition-colors">
-                        FOLLOW
-                    </Link>
+
                 </div>
 
                 {/* Social Icons (Desktop Only) */}
@@ -133,6 +134,13 @@ export default function Navbar() {
                         >
                             ABOUT
                         </Link>
+                        <Link
+                            href="/events"
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="hover:text-brand-green transition-colors border-b border-white/5 pb-4"
+                        >
+                            EVENTS
+                        </Link>
                         <a
                             href="https://t.me/FlourishNation"
                             target="_blank"
@@ -148,13 +156,7 @@ export default function Navbar() {
                         >
                             MEDIA
                         </Link>
-                        <Link
-                            href="/#footer"
-                            onClick={() => setMobileMenuOpen(false)}
-                            className="hover:text-brand-green transition-colors border-b border-white/5 pb-4"
-                        >
-                            FOLLOW
-                        </Link>
+
 
                         <div className="flex gap-6 mt-4">
                             <a href="https://web.facebook.com/ebenezer.ama.2025" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors text-white">
