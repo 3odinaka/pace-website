@@ -58,6 +58,9 @@ export default function Navbar() {
                     >
                         SERMONS
                     </a>
+                    <Link href="/media" className="hover:text-brand-green transition-colors">
+                        MEDIA
+                    </Link>
                     <Link href="/#footer" className="hover:text-brand-green transition-colors">
                         FOLLOW
                     </Link>
@@ -138,6 +141,13 @@ export default function Navbar() {
                         >
                             SERMONS
                         </a>
+                        <Link
+                            href="/media"
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="hover:text-brand-green transition-colors border-b border-white/5 pb-4"
+                        >
+                            MEDIA
+                        </Link>
                         <Link
                             href="/#footer"
                             onClick={() => setMobileMenuOpen(false)}

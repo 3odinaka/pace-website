@@ -5,12 +5,19 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 
 const images = [
+    "/media/recalibration/1.jpg",
     "/media/recalibration/IMG_0011.jpg",
     "/media/recalibration/IMG_0013.jpg",
     "/media/recalibration/IMG_0021.jpg",
     "/media/recalibration/IMG_0369.jpg",
     "/media/recalibration/IMG_0373.jpg",
     "/media/recalibration/IMG_0374.jpg",
+    "/media/recalibration/IMG_1499 2.jpg",
+    "/media/recalibration/IMG_1535 2.jpg",
+    "/media/recalibration/IMG_1551 2.jpg",
+    "/media/recalibration/IMG_1579.jpg",
+    "/media/recalibration/IMG_1599 2.jpg",
+    "/media/recalibration/IMG_1639 2.jpg",
     "/media/recalibration/IMG_2121.jpg",
     "/media/recalibration/IMG_2349.jpg",
     "/media/recalibration/IMG_2350.jpg",
@@ -86,6 +93,9 @@ const images = [
     "/media/recalibration/IMG_3805.jpg",
     "/media/recalibration/_MG_2704.jpg",
     "/media/recalibration/_MG_2712.jpg",
+    "/media/recalibration/img2.jpg",
+    "/media/recalibration/img3.jpg",
+    "/media/recalibration/img4.jpg",
 ];
 
 export default function MediaPage() {

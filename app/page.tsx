@@ -9,13 +9,13 @@ export default function Home() {
     <main className="min-h-screen bg-black">
       <Navbar />
       <Hero />
-      <MediaCarousel />
       <NewsletterSection />
       <div className="bg-black py-20 flex items-center justify-center">
         <h2 className="text-3xl md:text-5xl font-serif text-white text-center leading-tight mx-6">
           JOIN US AS WE SHAPE THE FUTURE OF THE <br className="hidden md:block" /><span className="text-brand-green">NEXT GENERATION.</span>
         </h2>
       </div>
+      <MediaCarousel />
       <Footer />
     </main>
   );
