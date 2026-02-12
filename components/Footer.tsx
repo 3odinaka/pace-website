@@ -23,7 +23,7 @@ export default function Footer() {
                         />
                     </div>
                     <p className="text-xl font-bold tracking-widest break-all">
-                        NEMERUCHE@GMAIL.COM
+                        pace@flourishgenerationchurch.org
                     </p>
                     <div className="flex gap-4 text-gray-400 text-sm">
                         <a href="https://web.facebook.com/ebenezer.ama.2025" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors">
